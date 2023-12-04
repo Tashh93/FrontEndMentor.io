@@ -1,0 +1,194 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    margin: 0px auto;
+}
+html{
+    background-color: hsl(212, 23%, 69%);
+}
+body {
+    background-color: hsl(214,17%,51%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.container-body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+
+}
+.body-image-holder{
+    width: 245px;
+    background-image: url(./images/drawers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.header-container{
+    background-color: white;
+    padding: 20px;
+    width: min-content;
+    border-radius: 0px 10px 10px 0px;
+}
+.intro-header{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+    padding-bottom: 10px;
+    line-height: 1.35;
+
+}
+.body-para{
+    color: hsl(214,17%,51%) ;
+    font-size: 13px;
+    font-family:  'Manrope', sans-serif;
+    font-weight: 500;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    line-height: 2;
+    width: 405px;
+}
+.body-footer{
+    display: flex;
+    gap: 10px;
+}
+.footer-img{
+    border-radius: 50% 50%;
+}
+.bold-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+}
+.bold{
+    color: hsl(217,19%,35%);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+}
+.no-bold{
+    color: hsl(212, 23%, 69%);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+}
+.button-tooltip-container{
+    display: flex;
+    margin-left: 40px;
+}
+button{
+    border-style: none;
+    border-radius: 50px 50px;
+    outline: none;
+    color: white;
+    height: 30px;
+    padding: 8px;
+    position: relative;
+    left: 85px;
+    top: 12px;
+    cursor: pointer;
+
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltiptext{
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 9px;
+    width: max-content;
+    height: max-content;
+    padding: 4px;
+    gap: 5px;
+    color: white;
+    position: relative;
+    left: 15px;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: hsl(217,19%,35%);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 95%;
+    left: 60%;
+    margin-left: 20px;
+}
+
+.tooltip-text{
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+}
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: hsl(217,19%,35%) transparent transparent transparent;
+  }
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%);
+}
