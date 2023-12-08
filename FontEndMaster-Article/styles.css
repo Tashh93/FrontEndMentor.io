@@ -47,9 +47,6 @@ table {
 }
 body {
     background-color: hsl(214,17%,51%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 100%;
 }
@@ -57,8 +54,7 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 50px;
-
+    padding: 60px 20px 10px 20px;
 }
 .body-image-holder{
     width: 245px;
@@ -259,7 +255,7 @@ button{
         left: 47px;
     }
 
-    .footer-img:active {
+    .footer-img{
         visibility: hidden;
     }
 
