@@ -37,6 +37,7 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -45,17 +46,25 @@ table {
 *{
     margin: 0px auto;
 }
+
+main{
+    padding-top: 60px;
+}
+
 body {
     background-color: hsl(214,17%,51%);
     width: 100%;
     height: 100%;
 }
+
 .container-body{
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 60px 20px 10px 20px;
+    padding-bottom: 15px;
+    padding-top: 50px;
 }
+
 .body-image-holder{
     width: 245px;
     background-image: url(./images/drawers.jpg);
@@ -70,6 +79,7 @@ body {
     width: min-content;
     border-radius: 0px 10px 10px 0px;
 }
+
 .intro-header{
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
@@ -78,6 +88,7 @@ body {
     line-height: 1.35;
 
 }
+
 .body-para{
     color: hsl(214,17%,51%) ;
     font-size: 13px;
@@ -88,33 +99,40 @@ body {
     line-height: 2;
     width: 405px;
 }
+
 .body-footer{
     display: flex;
     gap: 10px;
 }
+
 .footer-img{
     border-radius: 50% 50%;
 }
+
 .bold-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 7px;
 }
+
 .bold{
     color: hsl(217,19%,35%);
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
 }
+
 .no-bold{
     color: hsl(212, 23%, 69%);
     font-family: 'Manrope', sans-serif;
     font-weight: 500;
 }
+
 .button-tooltip-container{
     display: flex;
 
 }
+
 button{
     border-style: none;
     border-radius: 50px 50px;
@@ -128,10 +146,12 @@ button{
     cursor: pointer;
 
 }
+
 .tooltip {
     position: relative;
     display: inline-block;
 }
+
 .tooltiptext{
     background-color: hsl(217, 19%, 35%);
     border-radius: 9px;
@@ -141,7 +161,7 @@ button{
     gap: 5px;
     color: white;
     position: relative;
-    left: 15px;
+    left: 45px;
 }
 
 .tooltip .tooltiptext {
@@ -156,7 +176,8 @@ button{
     z-index: 1;
     bottom: 95%;
     left: 60%;
-    margin-left: 20px;
+    margin-left: -62px;
+    margin-bottom: 9px;
 }
 
 .tooltip-text{
@@ -164,6 +185,7 @@ button{
     font-family: 'Manrope', sans-serif;
     font-size: 12px;
 }
+
 .tooltip .tooltiptext::after {
     content: "";
     position: absolute;
@@ -178,19 +200,21 @@ button{
 .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+
 .attribution {
     font-size: 11px;
     text-align: center;
 }
+
 .attribution a {
      color: hsl(228, 45%, 44%);
 }
+
 @media screen and (max-width: 375px) {
     body{
-        background-color: red;
+        background-color: hsl(212, 23%, 69%);
         align-content: center;
         justify-content: center;
-        margin-right: 45px;
 
     }
 
@@ -198,15 +222,13 @@ button{
         align-content: center;
         justify-content: center;
         flex-direction: column;
-        padding: 10px;
+        padding: 15px;
+
     }
 
     .body-image-holder{
-        width: 330px;
-        background-image: url(./images/drawers.jpg);
-        background-repeat: no-repeat;
-        background-position: -5px -45px;
-        border-radius: 15px 15px 0 0;
+        width: 325px;
+        border-radius: 7px 7px 0 0;
         height: 160px;
     }
 
@@ -215,7 +237,7 @@ button{
         padding: 20px;
         width: 285px;
         height: max-content;
-        border-radius: 0 0 15px 15px;
+        border-radius: 0 0 7px 7px;
     }
 
     .body-para{
@@ -255,14 +277,10 @@ button{
         left: 47px;
     }
 
-    .footer-img{
-        visibility: hidden;
-    }
-
-    .button-tooltip-container:active{
-        background-color: hsl(217,19%,35%);
+    .button-tooltip-container{
         color: white;
         display: flex;
     }
+
 
 }
